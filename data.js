@@ -1,0 +1,93 @@
+const codingDiary = [
+    {
+        date: "2025-03-07",
+        timeFrame: "5pm-8pm",
+        project: "Adolescent.net",
+        task: "Backend CMS/server for magazine website",
+        status: "In Progress",
+        distractionTime: 60,
+        location: "Train from NYC to Albany",
+        company: "Alone",
+        happinessBefore: 8.5,
+        happinessAfter: 7,
+        hungryDehydrated: true
+    },
+    {
+        date: "2025-03-08",
+        timeFrame: "4pm-8pm",
+        project: "Adolescent.net",
+        task: "Backend server code",
+        status: "In Progress",
+        distractionTime: 120,
+        location: "Girlfriend's house",
+        company: "Girlfriend and her parents",
+        happinessBefore: 9,
+        happinessAfter: 9,
+        hungryDehydrated: false
+    },
+    {
+        date: "2025-03-10",
+        timeFrame: "5:30pm-7pm",
+        project: "Adolescent.net",
+        task: "Frontend mockup and Figma design",
+        status: "In Progress",
+        distractionTime: 30,
+        location: "Holiday Inn Mont Tremblant",
+        company: "Girlfriend",
+        happinessBefore: 10,
+        happinessAfter: 9,
+        hungryDehydrated: true
+    },
+    {
+        date: "2025-03-14",
+        timeFrame: "3:30pm-6:30pm",
+        project: "CameraRoll",
+        task: "Frontend component with CMS integration",
+        status: "Finished",
+        distractionTime: 60,
+        location: "Home in Vermont",
+        company: "Alone",
+        happinessBefore: 8.5,
+        happinessAfter: 7,
+        hungryDehydrated: true
+    },
+    {
+        date: "2025-03-15",
+        timeFrame: "3pm-5pm",
+        project: "Adolescent.net",
+        task: "Frontend navigation and footer",
+        status: "Finished",
+        distractionTime: 0,
+        location: "Home",
+        company: "Alone",
+        happinessBefore: 5,
+        happinessAfter: 7,
+        hungryDehydrated: false
+    },
+    {
+        date: "2025-03-16",
+        timeFrame: "7:40pm-10pm and 1am-2:50am",
+        project: "Adolescent.net",
+        task: "Frontend homepage components and debugging",
+        status: "In Progress",
+        distractionTime: 90,
+        location: "Train",
+        company: "Kian (Columbia developer)",
+        happinessBefore: 8,
+        happinessAfter: 7,
+        hungryDehydrated: true
+    },
+    {
+        date: "2025-03-17",
+        timeFrame: "2pm-5pm",
+        project: "Personal",
+        task: "Travel organization app with Airbnb integration",
+        status: "In Progress",
+        distractionTime: 30,
+        location: "New School cafe",
+        company: "Alone",
+        happinessBefore: 8,
+        happinessAfter: 6,
+        hungryDehydrated: true
+    }
+]; 
