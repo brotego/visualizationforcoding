@@ -63,8 +63,12 @@ const svg = d3.select("#main-visualization")
 
 // Create scales
 const x = d3.scaleTime()
-    .domain(d3.extent(codingDiary, d => new Date(d.date)))
-    .range([0, width]);
+    .domain([
+        d3.min(codingDiary, d => new Date(d.date)),
+        d3.timeDay.offset(d3.max(codingDiary, d => new Date(d.date)), 1)  // Add 1 day padding
+    ])
+    .range([0, width])
+    .nice();  // Nice rounds the domain to clean values
 
 const y = d3.scaleLinear()
     .domain([0, 10])
@@ -77,7 +81,9 @@ const r = d3.scaleLinear()
 
 // Create axes
 const xAxis = d3.axisBottom(x)
-    .tickFormat(d3.timeFormat("%b %d"));
+    .tickFormat(d3.timeFormat("%b %d"))
+    .ticks(d3.timeDay)  // Show tick for each day
+    .tickSizeOuter(0);  // Remove outer ticks
 const yAxis = d3.axisLeft(y);
 
 svg.append("g")
@@ -86,6 +92,23 @@ svg.append("g")
 
 svg.append("g")
     .call(yAxis);
+
+// Add X axis label
+svg.append("text")
+    .attr("class", "axis-label")
+    .attr("x", width / 2)
+    .attr("y", height + 40)
+    .style("text-anchor", "middle")
+    .text("Dates");
+
+// Add Y axis label
+svg.append("text")
+    .attr("class", "axis-label")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -40)
+    .style("text-anchor", "middle")
+    .text("Happiness Level");
 
 // Add happiness line with gradient
 const gradient = svg.append("defs")

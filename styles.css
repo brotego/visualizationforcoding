@@ -165,4 +165,11 @@ h2{
 .highlight-button.active:hover {
     background-color: #2980b9;
     transform: none;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: 500;
+    fill: #2c3e50;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 } 
